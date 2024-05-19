@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
+/* Component.css */
+
+/* Basic reset for margins and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Container styling */
+.translate-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Heading styling */
+.translate-container h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* Input field styling */
+.translate-container input[type="text"] {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Select field styling */
+.translate-container select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Button styling */
+.translate-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 4px;
   color: white;
+  font-size: 16px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.translate-container button:hover {
+  background-color: #0056b3;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Result styling */
+.translate-container .translation-result {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #e9ecef;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  white-space: pre-wrap; /* Preserve whitespace formatting */
+}
+
+.translate-container .translation-result h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #333;
+}
+
+.translate-container .translation-result pre {
+  font-size: 16px;
+  color: #333;
 }
