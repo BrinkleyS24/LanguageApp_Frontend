@@ -1,13 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import Homepage from './components/Homepage/Homepage';
+import TranslateText from './components/Translate/TranslateText';
+
+
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+const routes = [
+  {
+    path: '/',
+    element: <Homepage />,
+  },
+  {
+    path: '/translate',
+    element: <TranslateText className="component" />,
+  },
+];
+const router = createBrowserRouter(routes);
+
+ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 
