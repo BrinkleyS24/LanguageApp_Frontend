@@ -1,17 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Homepage from './components/Homepage/Homepage';
+import Welcome from './components/Welcome/Welcome';
 import TranslateText from './components/Translate/TranslateText';
 
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
+import Home from './components/Home/Home';
 
 const routes = [
   {
     path: '/',
-    element: <Homepage />,
+    element: <Welcome />,
+  },
+  {
+    path: '/home',
+    element: <Home />,
   },
   {
     path: '/translate',

@@ -1,0 +1,33 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.homepage-container {
+  background-color: #f8f9fa;
+  padding: 2rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-text {
+  text-align: center;
+  color: #333;
+}
+
+.hero-button {
+  margin-top: 1rem;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+}
+
+footer {
+  background-color: #343a40;
+  color: #fff;
+  padding: 1rem 0;
+}

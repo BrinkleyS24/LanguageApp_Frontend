@@ -1,0 +1,14 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .card {
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    transition: transform 0.2s;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  

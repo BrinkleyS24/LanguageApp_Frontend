@@ -68,16 +68,16 @@ const TranslateText = () => {
               </Form.Control>
             </Form.Group>
 
-      <Form.Group controlId="text">
-        <Form.Label>Text to Translate</Form.Label>
-        <Form.Control
-          as="textarea"
-          rows={4}
-          value={inputText}
-          onChange={(e) => setInputText(e.target.value)}
-          placeholder="Enter text to translate"
-        />
-      </Form.Group>
+            <Form.Group controlId="text">
+              <Form.Label>Text to Translate</Form.Label>
+              <Form.Control
+                as="textarea"
+                rows={4}
+                value={inputText}
+                onChange={(e) => setInputText(e.target.value)}
+                placeholder="Enter text to translate"
+              />
+            </Form.Group>
 
             <Button className="translate-button" onClick={handleTranslateText}>
               Translate
